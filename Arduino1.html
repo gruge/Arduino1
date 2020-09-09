@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="mystyle.css">
+		<title>Arduino1</title>
+		<header class="header">KY-008 Red Laser Head Transmitter Module</header>
+	</head>
+<body>
+	<table>
+	<td><img src="Module.png" alt="Module" width="500" height="500"></td>
+	</table>
+	
+	<table class="table1">
+	<td><img src="ModuleBlueprint.png" alt="ModuleBlueprint" width="600" height="500"></td>
+	</table>
+	
+	<table class="table2">
+	<tr>
+		<td>
+		<h1>Brief description of the module</h1>
+		This Keyes device is one of the more common devices found in Arduino sensor kits.
+		Coupled with other components, it can be used to create trip wires or optical effects.
+		The KY-008 is particularly neat because it can be directly powered from an Arduino
+		output pin as it only draws 30 mA from the processor that has outputs rated for 40 mA.
+		</td>
+	</tr>
+	</table>
+	
+		<table class="table3">
+	<tr>
+		<td>
+			<h1>Code:</h1>
+		<br>int laserPin = 10;</br>
+void setup ()</br>
+{</br>
+pinMode (laserPin, OUTPUT); // define the digital output interface 13 feet</br>
+}</br>
+void loop () {</br>
+laserEmiter(laserPin,15,5);</br>
+}</br>
+void laserEmiter(int laserPin,int timeToBurn,int timeToRest){//made by Ilja Kazantsev</br>
+digitalWrite (laserPin, HIGH); // Turn Laser On</br>
+delay (timeToBurn);// delay while it burns</br>
+digitalWrite (laserPin, LOW); // Turn Laser Off</br>
+delay (timeToRest);//delay till new cicle</br>
+}</br>
+void setup ()</br>
+{</br>
+pinMode (laserPin, OUTPUT); // define the digital output interface 13 feet</br>
+}</br>
+void loop () {</br>
+laserEmiter(laserPin,15,5);</br>
+}</br>
+void laserEmiter(int laserPin,int timeToBurn,int timeToRest){//made by Ilja Kazantsev</br>
+digitalWrite (laserPin, HIGH); // Turn Laser On</br>
+delay (timeToBurn);// delay while it burns</br>
+digitalWrite (laserPin, LOW); // Turn Laser Off</br>
+delay (timeToRest);//delay till new cicle</br>
+}</br>
+		</td>
+	</tr>
+	</table>
+	<table class="table4">
+	<tr>
+	<td>
+		<a href="http://scrumpoker.eu/%d1%81%d0%bf%d0%b5%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d1%8b/arduino/%d0%b1%d0%b8%d0%b1%d0%bb%d0%b8%d0%be%d1%82%d0%b5%d0%ba%d0%b0-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d0%b5%d0%b9-arduino/%d0%bb%d0%b0%d0%b7%d0%b5%d1%80%d0%bd%d1%8b%d0%b9-%d0%b8%d0%b7%d0%bb%d1%83%d1%87%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-laser-emiter/">Go to original website</a>
+	</td>
+	</tr>
+	</table>
+</body>
+</html>
